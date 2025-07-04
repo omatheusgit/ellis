@@ -99,7 +99,7 @@ gcloud run deploy --port=8000
 ```
 ---
 
-## 📚 Créditos
+## Créditos
 
 Este projeto é baseado no repositório original [ellis](https://github.com/guilhermeonrails/ellis), desenvolvido para a **Imersão DevOps - Alura com Google Cloud**.
 
