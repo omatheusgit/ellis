@@ -1,4 +1,26 @@
-# Imersão DevOps - Alura Google Cloud
+# Imersão DevOps - Alura com Google Cloud ☁️🐳
+
+Este projeto foi desenvolvido durante a **Imersão DevOps da Alura em parceria com o Google Cloud**, com foco em aprender na prática conceitos de **Cloud Computing**, **Docker**, **CI/CD** e **Google Cloud Run**.
+
+A proposta simulou um cenário real em que uma equipe de DevOps recebe uma aplicação pronta da equipe de desenvolvimento (neste caso, uma API em FastAPI) e precisa garantir que a aplicação funcione corretamente em qualquer ambiente — resolvendo o clássico problema do _"na minha máquina funciona"_.
+
+Etapas da Imersão:
+
+- Leitura da documentação da API e entendimento da estrutura;
+- Containerização com Docker;
+- Organização do ambiente com Docker Compose;
+- Uso do Gemini Code Assist, a nova extensão de IA do Google;
+- Criação de uma pipeline CI com GitHub Actions, que realiza o build da imagem automaticamente a cada push;
+- Deploy na Google Cloud com o Cloud Run, permitindo acesso público e escalável via navegador.
+
+Ao final da imersão, foi possível aplicar na prática os principais conceitos de DevOps e Cloud, desde a preparação de um ambiente com Docker até a entrega contínua e o deploy automatizado em ambiente de nuvem. 
+
+---
+
+Abaixo, você encontra a **documentação completa da API**.
+
+---
+
 
 Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e matrículas em uma instituição de ensino.
 
@@ -65,13 +87,20 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 - O banco de dados SQLite será criado automaticamente como `escola.db` na primeira execução.
 - Para reiniciar o banco, basta apagar o arquivo `escola.db` (isso apagará todos os dados).
 
-
 ---
 
-## Comandos para subir no Google CLoud
-- gcloud init 
-- gcloud auth login
-- gcloud config set project PROJECT-ID
-- gcloud run deploy --port=8000
+## Deploy no Google Cloud Run
 
+```
+gcloud init
+gcloud auth login
+gcloud config set project [PROJECT-ID]
+gcloud run deploy --port=8000
+```
 ---
+
+## 📚 Créditos
+
+Este projeto é baseado no repositório original [ellis](https://github.com/guilhermeonrails/ellis), desenvolvido para a **Imersão DevOps - Alura com Google Cloud**.
+
+A imersão foi conduzida por um instrutor da Alura, com o apoio de uma **SRE sênior da comunidade** e de um **especialista do Google Cloud**.
